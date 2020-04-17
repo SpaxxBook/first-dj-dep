@@ -1,0 +1,14 @@
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+
+    {% block body_block%}
+
+    <h1>Hello and welcome to the site!</h1>
+      <!-- <h1>This is the index.html page</h1> -->
+    <h1>
+      To the {{ text|cutout:"hello " }} of {{ number|add:1920 }}!
+    </h1>
+
+    <em>{{ date|date:'2020-03-16' }}</em>
+
+    {% endblock %}
